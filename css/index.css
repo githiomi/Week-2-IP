@@ -19,7 +19,7 @@ body{
 .col-md-12 h1{
 	padding: 10px;
 	text-align: center;
-	border-bottom: 2px solid gold;
+	border-bottom: 5px solid gold;
 	border-radius: 70%;
 }
 
@@ -44,3 +44,15 @@ body{
 	text-align: center;
 }
 
+form{
+	height: 500px;
+	color: white;
+	text-align: center;
+	background-position: center;
+}
+
+input{
+	width: 90%;
+	margin-top: 50px;
+	padding: 10px;
+}
