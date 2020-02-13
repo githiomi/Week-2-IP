@@ -1,8 +1,12 @@
+body{
+	background-color: black;
+}
+
 .container{
 	margin: 10px 100px 10px 90px;
 	background: url("img/nf.jpg");
 	background-position: top;
-	height: 1500px;
+	height: 2000px;
 	background-attachment: fixed;
 }
 
@@ -32,4 +36,11 @@
 	border-right: 3px solid red;
 }
 
+.extra{
+	width: 100%;
+	background-color: black;
+	opacity: 70%;
+	color: gold;
+	text-align: center;
+}
 
