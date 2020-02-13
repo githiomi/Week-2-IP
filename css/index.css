@@ -6,7 +6,7 @@ body{
 	margin: 10px 100px 10px 90px;
 	background: url("img/nf.jpg");
 	background-position: top;
-	height: 1600px;
+	height: 1720px;
 	font-weight: bolder;
 	background-attachment: fixed;
 }
@@ -29,12 +29,13 @@ body{
 }
 
 .col-md-6{
+	width: 90%;
 	padding: 10px;
-	background-color: black;
-	opacity: 70%;
+	background: url("img/back.jpg");
+	background-attachment: fixed;
 	color: gold;
 	text-align: center;
-	border-right: 3px solid red;
+	border-right: 3px solid gold;
 }
 
 .extra{
