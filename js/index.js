@@ -1,4 +1,4 @@
-function akanReveal(day, gen, DD, MM, CC, YY) {
+function akanReveal(gen, DD, MM, CC, YY) {
 
 	var mNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 	var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
@@ -25,22 +25,10 @@ function akanReveal(day, gen, DD, MM, CC, YY) {
 
 	var dateCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
 
-	if (gen === "M" || gen === "m"){
+	if (gen = f) {
+		alert(dateCheck);
+	} else {
+		alert("check date");
+	};
 
-		mNames = mNames[dateCheck];
-		day = day[dateCheck];
-
-		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " + mNames + " which was on a " + day;
-
-	} else if (gen === "F" || gen === "f"){
-
-		fNames = fNames[dateCheck];
-		day = day[dateCheck];
-
-		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +fNames + " which was on a " + day;
-
-	}else{
-
-		alert("Dates not well input")
-	}
 };
