@@ -23,22 +23,34 @@ function genderChange() {
 };
 
 function akanReveal() {
-	var dob = parseInt(document.getElementById("date").value);
-		if (dob < 0 || dob > 31){
+
+	var DD = parseInt(document.getElementById("date").value);
+		/*if (dob < 1 || dob > 31){
 			alert("Enter a vaild date")
-		}
-	var mob = parseInt(document.getElementById("month").value);
-		if (mob < 0 || dob > 12){
+		}*/
+	var MM = parseInt(document.getElementById("month").value);
+		/*if (mob < 1 || dob > 12){
 			alert("Enter a vaild month (00-12)");
-		}
-	var cob = parseInt(document.getElementById("century").value);
-		if (cob < 0 || dob > 20){
+		}*/
+	var CC = parseInt(document.getElementById("century").value);
+		/*if (cob < 1 || dob > 20){
 			alert("Enter a vaild century (00-20)");
-		}
-	var yob = parseInt(document.getElementById("year").value);
-		if (yob < 0 || dob > 20){
+		}*/
+	var YY = parseInt(document.getElementById("year").value);
+		/*if (yob < 1 || dob > 20){
 			alert("Enter a vaild year (00-20)");
-		}
+		}*/
+
+	var dCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
+
+	var menNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+		alert(menNames);
+
+	if (gender === Male){
+		menNames[dCheck];
+
+		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +menNames;
+	}
 
 
 };
