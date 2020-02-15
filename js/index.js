@@ -1,31 +1,8 @@
-/*This opens/closes the dropdown menu*/
-/*function genderDrop() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-
-function genderChange() {
-	var gender = document.getElementByID("genderBtn").value;
-	alert(gender);
-};*/
-
-function akanReveal() {
+function akanReveal(day, gen, DD, MM, CC, YY) {
 
 	var mNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-
 	var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+	var day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 	var gen = document.getElementById("gender").value;
 
@@ -46,17 +23,21 @@ function akanReveal() {
 			alert("Enter a vaild year (00-20)");
 		}*/
 
-	var dCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
+	var dateCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
 
 	if (gen === "M" || gen === "m"){
-		mNames[dCheck];
 
-		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +mNames;
+		mNames = mNames[dateCheck];
+		day = day[dateCheck];
+
+		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " + mNames + " which was on a " + day;
 
 	} else if (gen === "F" || gen === "f"){
-		fNames[dCheck];
 
-		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +fNames;
+		fNames = fNames[dateCheck];
+		day = day[dateCheck];
+
+		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +fNames + " which was on a " + day;
 
 	}else{
 
