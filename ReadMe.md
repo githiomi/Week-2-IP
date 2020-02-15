@@ -17,7 +17,7 @@ Most people do know when their birthdays are, but some might not know what day o
 No bugs to report at the moment! the system works efficiently at 100% guaranteed. Feel free to search the output on googl to ensure that it coincides exactly.
 
 ## Link to live page
-[This is my link to live pages] https://github.com/githiomi/Week-One-IP
+[This is my link to live pages] https://githiomi.github.io/Week-2-IP/
 
 ## Technologies Used
 It is made completly using sublime Text 3 where all the following files were created and modified until the output is as you see it.
