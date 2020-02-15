@@ -25,10 +25,24 @@ function akanReveal(gen, DD, MM, CC, YY) {
 
 	var dateCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
 
-	if (gen = f) {
-		alert(dateCheck);
+	/*alert (gen);*/
+
+	if (gen === 'M' || gen === "m") {
+
+		var aName = mNames[dateCheck];
+
+		document.getElementByID("akanName").innerHTML = "And your akan name is: " + aName;
+
+	} else if (gen === 'F' || gen === "F") {
+
+		var aName = mNames[dateCheck];
+
+		document.getElementByID("akanName").innerHTML = "And your akan name is: " + aName;
+
 	} else {
-		alert("check date");
-	};
+
+	alert("Wrong dates");
+	
+	}
 
 };
