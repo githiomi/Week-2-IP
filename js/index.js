@@ -43,13 +43,23 @@ function akanReveal() {
 
 	var dCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
 
-	var menNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-		alert(menNames);
+	var mNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+	var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 	if (gender === Male){
-		menNames[dCheck];
+		mNames[dCheck];
 
-		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +menNames;
+		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +mNames;
+
+	} else if (gender === Female){
+		fNames[dCheck];
+
+		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +fNames;
+
+	}else{
+
+		alert("Dates not well input")
 	}
 
 
