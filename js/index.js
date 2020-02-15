@@ -1,5 +1,5 @@
 /*This opens/closes the dropdown menu*/
-function genderDrop() {
+/*function genderDrop() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
@@ -17,12 +17,17 @@ window.onclick = function(event) {
 }
 
 function genderChange() {
-	var gender = [];
-	gender.push(document.getElementsByClassName("dropdown-content"));
+	var gender = document.getElementByID("genderBtn").value;
 	alert(gender);
-};
+};*/
 
 function akanReveal() {
+
+	var mNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+
+	var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+	var gen = document.getElementById("gender").value;
 
 	var DD = parseInt(document.getElementById("date").value);
 		/*if (dob < 1 || dob > 31){
@@ -43,16 +48,12 @@ function akanReveal() {
 
 	var dCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
 
-	var mNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-
-	var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-
-	if (gender === Male){
+	if (gen === "M" || gen === "m"){
 		mNames[dCheck];
 
 		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +mNames;
 
-	} else if (gender === Female){
+	} else if (gen === "F" || gen === "f"){
 		fNames[dCheck];
 
 		document.getElementByID("akanName").innerHTML = "And your Akan Name is: " +fNames;
@@ -61,6 +62,4 @@ function akanReveal() {
 
 		alert("Dates not well input")
 	}
-
-
 };
