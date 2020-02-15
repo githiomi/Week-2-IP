@@ -25,6 +25,9 @@ function akanReveal(gen, DD, MM, CC, YY) {
 
 	var dateCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
 
+	var mNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+	var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
 	/*alert (gen);*/
 
 	if (gen === 'M' || gen === "m") {
@@ -33,7 +36,7 @@ function akanReveal(gen, DD, MM, CC, YY) {
 
 		document.getElementByID("akanName").innerHTML = "And your akan name is: " + aName;
 
-	} else if (gen === 'F' || gen === "F") {
+	} else if (gen === 'f' || gen === "F") {
 
 		var aName = mNames[dateCheck];
 

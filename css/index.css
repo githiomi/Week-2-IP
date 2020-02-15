@@ -85,13 +85,13 @@ input{
 .footer{
 	margin: 10px;
 	padding: 10px;
-	background-color: grey;
+	background-color: black;
 	color: white;
 	margin: 2px;
 }
 
 .footer .col-md-4{
-	border-right: 2px solid black;
+	border-right: 2px solid grey;
 }
 
 .col-md-4 h3{
