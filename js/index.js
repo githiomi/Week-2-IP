@@ -7,19 +7,19 @@ function akanReveal(gen, DD, MM, CC, YY) {
 	var gen = document.getElementById("gender").value;
 
 	var DD = parseInt(document.getElementById("date").value);
-		if (DD < 1 || DD > 31 || DD !== DD){
+		if (DD < 01 || DD > 31 || DD !== DD){
 			alert("Enter a vaild date")
 		}
 	var MM = parseInt(document.getElementById("month").value);
-		if (MM < 1 || MM > 31 || MM !== MM){
+		if (MM < 01 || MM > 12 || MM !== MM){
 			alert("Enter a vaild month (00-12)");
 		}
 	var CC = parseInt(document.getElementById("century").value);
-		if (CC < 1 || CC > 31 || CC !== CC){
+		if (CC < 01 || CC > 20 || CC !== CC){
 			alert("Enter a vaild century (00-20)");
 		}
 	var YY = parseInt(document.getElementById("year").value);
-		if (YY < 1 || YY > 31 || YY !== YY){
+		if (YY < 01 || YY > 99 || YY !== YY){
 			alert("Enter a vaild year (00-20)");
 		}
 
