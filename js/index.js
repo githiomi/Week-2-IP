@@ -34,11 +34,11 @@ function akanReveal(gen, DD, MM, CC, YY) {
 		var aName = mNames[dateCheck];
 		var aDay = day[dateCheck];
 
-		akanName.innerHTML = "And your akan name is: " + aName + " which was on a " + aDay;
+		akanName.innerHTML = "And your akan name is: " + aName + " which was on a: " + aDay;
 
 	} else if (gen === 'f' || gen === "F") {
 
-		var aName = mNames[dateCheck];
+		var aName = fNames[dateCheck];
 		var aDay = day[dateCheck];
 
 		akanName.innerHTML = "And your akan name is: " + aName + " which was on a: " + aDay;
