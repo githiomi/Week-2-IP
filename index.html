@@ -54,15 +54,15 @@
 		<div class="input">
 			<form>
 
- 		 			<input placeholder="Please input your Date of Birth (DD)" type="text" id="date"><br>
+ 		 			<input placeholder="Please input your Date of Birth (DD)" type="text" id="date" max="31" min="1" required><br>
 
-  		     	    <input placeholder="Please input your Month of Birth (MM)" type="text" id="month"><br>
+  		     	    <input placeholder="Please input your Month of Birth (MM)" type="text" id="month" max="12" min="1" required><br>
 
-  		     	    <input placeholder="Please input your Century of Birth (YY) eg: 19/20" type="text" id="century"><br>
+  		     	    <input placeholder="Please input your Century of Birth (YY) eg: 19/20" type="text" id="century" max="20" min="0" required><br>
 
-  		     	    <input placeholder="Please input your Year of Birth (YY) eg: 98/01" type="text" id="year"><br>
+  		     	    <input placeholder="Please input your Year of Birth (YY) eg: 98/01" type="text" id="year" max="99" min="0" required><br>
 
-					<input placeholder="Please input your Gender (M/F)" type="text" id="gender"><br>
+					<input placeholder="Please input your Gender (M/F)" type="text" id="gender" required><br>
 
 					<button type="button" onclick="akanReveal();">Check Akan Name</button>
 

@@ -23,29 +23,31 @@ function akanReveal(gen, DD, MM, CC, YY) {
 			alert("Enter a vaild year (00-20)");
 		}*/
 
-	var dateCheck = parseInt(( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
+	var dateCheck = parseInt((((CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) % 7);
 
 	var mNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 	var fNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
-	/*alert (gen);*/
 
 	if (gen === 'M' || gen === "m") {
 
 		var aName = mNames[dateCheck];
+		var aDay = day[dateCheck];
 
-		document.getElementByID("akanName").innerHTML = "And your akan name is: " + aName;
+		akanName.innerHTML = "And your akan name is: " + aName + " which was on a " + aDay;
 
 	} else if (gen === 'f' || gen === "F") {
 
 		var aName = mNames[dateCheck];
+		var aDay = day[dateCheck];
 
-		document.getElementByID("akanName").innerHTML = "And your akan name is: " + aName;
+		akanName.innerHTML = "And your akan name is: " + aName + " which was on a: " + aDay;
 
 	} else {
 
 	alert("Wrong dates");
 	
 	}
+
 
 };
